@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Liam Morgan — Senior Software Developer</title>
+<meta name="description" content="Portfolio of Liam Morgan, a Senior Software Developer building full-stack systems and self-hosted side projects.">
+<meta property="og:title" content="Liam Morgan">
+<meta property="og:description" content="Senior Software Developer — full-stack systems, homelab projects, and side builds for local businesses.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0d0e16">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%230d0e16%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22%23bd93f9%22 font-family=%22monospace%22>~</text></svg>">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script>document.documentElement.classList.add('js');</script>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="scan-sweep"></div>
+  <div class="vignette"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <main>
+    <nav class="tabs">
+      <div class="tabs-inner">
+        <span class="me">liam.morgan</span>
+        <a href="#about">~/about</a>
+        <a href="#work">~/work</a>
+        <a href="#oss">~/oss</a>
+        <a href="#stack">~/stack</a>
+        <a href="#contact">~/contact</a>
+        <a href="resume/" class="resume-btn">résumé</a>
+      </div>
+    </nav>
+    <div class="wrap">
+      <section class="hero">
+        <h1>Liam Morgan</h1>
+        <div class="term-window hero-term">
+          <div class="term-bar"><span></span><span></span><span></span><span class="term-title">whoami.sh</span></div>
+          <div class="term-body">
+            <p class="tline" data-text="liam@dev:~$ whoami"></p>
+            <p class="tline out accent" data-text="Senior Software Developer"></p>
+            <p class="tline" data-text="liam@dev:~$ cat now.txt"></p>
+            <p class="tline out muted" data-text="I run my own homelab — self-hosted services, small Docker projects — and build side projects for local businesses that actually need them."></p>
+            <p class="tline"><span class="caret2"></span></p>
+          </div>
+        </div>
+        <p class="scroll-cue">scroll</p>
+      </section>
+
+      <section class="block reveal" id="about">
+        <p class="kicker">01 — about</p>
+        <div class="panel about-panel term-window">
+          <div class="term-bar"><span></span><span></span><span></span><span class="term-title">about.md</span></div>
+          <div class="term-body">
+            <span class="now"><span class="dot"></span> Currently building at Firefish Software</span>
+            <p>I build full-stack software end to end — APIs, databases, the cloud infrastructure behind them, and the UI on top. C#, TypeScript and React at work; Docker and self-hosted Linux for everything I run myself.</p>
+            <p>I'm deep into the AI development side of things too — I lead the rollout of AI tooling for developers at work, and Claude Code is part of my daily workflow, not a novelty. It's one of the more interesting shifts I've seen in how software actually gets built, and I like staying close to where that's heading.</p>
+            <p>I like building for people I actually know — a gym that needed to stop chasing cash payments, a print shop that needed an online storefront.</p>
+            <p>Outside of work: self-hosting, Brazilian Jiu-Jitsu, and gaming.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block reveal" id="work">
+        <p class="kicker">02 — work</p>
+        <h2>Selected projects</h2>
+        <div class="work-grid">
+          <article class="panel work-card reveal-item">
+            <div class="term-bar"><span></span><span></span><span></span><span class="term-title">~/projects/nxtgenbjj</span></div>
+            <div class="work-body">
+              <div class="work-head">
+                <h3 class="work-name">NxtGenBJJ.com</h3>
+                <span class="work-status live">Live</span>
+              </div>
+              <p class="work-desc"><span class="lbl lbl-problem">PROBLEM</span>Cash-only, name-in-the-book membership tracking — people kept missing payments.</p>
+              <p class="work-desc"><span class="lbl lbl-built">BUILT</span>A membership portal for online sign-up and payment, plus a kiosk tablet on-site for walk-up payments.</p>
+              <p class="work-desc"><span class="lbl lbl-outcome">OUTCOME</span>Live and in daily use — members and owners have given genuinely great feedback since launch.</p>
+              <div class="work-tags"><span>Full-stack</span><span>Payments</span><span>Kiosk UI</span><span>Self-hosted</span></div>
+              <a class="work-link" href="https://nxtgenbjj.com" target="_blank" rel="noopener">Visit nxtgenbjj.com →</a>
+            </div>
+          </article>
+          <article class="panel work-card reveal-item" style="transition-delay:.1s">
+            <div class="term-bar"><span></span><span></span><span></span><span class="term-title">~/projects/groupscape</span></div>
+            <div class="work-body">
+              <div class="work-head">
+                <h3 class="work-name">GroupScape</h3>
+                <span class="work-status live">Live</span>
+              </div>
+              <p class="work-desc"><span class="lbl lbl-problem">PROBLEM</span>No good way to track a group's real-time position and stats together while playing Old School RuneScape.</p>
+              <p class="work-desc"><span class="lbl lbl-built">BUILT</span>A RuneLite plugin with a companion website and server, tracking teammates' in-game data and position live.</p>
+              <p class="work-desc"><span class="lbl lbl-outcome">OUTCOME</span>Published on the official RuneLite plugin hub and actively maintained with regular updates.</p>
+              <div class="work-tags"><span>Plugin</span><span>Real-time</span><span>Self-hosted</span></div>
+              <a class="work-link" href="https://groupscape.online" target="_blank" rel="noopener">Visit groupscape.online →</a>
+            </div>
+          </article>
+          <article class="panel work-card reveal-item" style="transition-delay:.2s">
+            <div class="term-bar"><span></span><span></span><span></span><span class="term-title">~/projects/partners-printhouse</span></div>
+            <div class="work-body">
+              <div class="work-head">
+                <h3 class="work-name">Partners Printhouse</h3>
+                <span class="work-status soon">Coming soon</span>
+              </div>
+              <p class="work-desc"><span class="lbl lbl-problem">PROBLEM</span>Orders and print jobs for a custom clothing business, tracked manually.</p>
+              <p class="work-desc"><span class="lbl lbl-building">BUILDING</span>A customer-facing shop for designing and paying for orders, and an admin backend to manage every order and print job in one place.</p>
+              <p class="work-desc"><span class="lbl lbl-status">STATUS</span>In build now, launching later this year.</p>
+              <div class="work-tags"><span>E-commerce</span><span>Admin dashboard</span><span>In progress</span></div>
+              <span class="work-link disabled">Launching soon →</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="block reveal" id="oss">
+        <p class="kicker">03 — open source</p>
+        <h2>Where I've contributed</h2>
+        <div class="panel oss-panel term-window">
+          <div class="term-bar"><span></span><span></span><span></span><span class="term-title">oss.log</span></div>
+          <div class="term-body">
+            <div class="oss-list">
+              <div class="oss-item reveal-item">
+                <a class="oss-link-wrap" href="https://github.com/gethomepage/homepage" target="_blank" rel="noopener">
+                  <img class="oss-icon" src="https://github.com/gethomepage.png?size=64" width="16" height="16" alt="" loading="lazy">
+                  <p class="oss-item-name">Homepage <span class="oss-stars">★ 32.6k</span></p>
+                </a>
+                <div class="oss-item-body">
+                  <p class="oss-item-desc">Built a new Posterizarr integration widget for this widely-used self-hosted dashboard.</p>
+                </div>
+              </div>
+              <div class="oss-item reveal-item" style="transition-delay:.08s">
+                <a class="oss-link-wrap" href="https://github.com/connorgallopo/Tracearr" target="_blank" rel="noopener">
+                  <img class="oss-icon" src="https://github.com/connorgallopo.png?size=64" width="16" height="16" alt="" loading="lazy">
+                  <p class="oss-item-name">Tracearr <span class="oss-stars">★ 2.5k</span></p>
+                </a>
+                <div class="oss-item-body">
+                  <p class="oss-item-desc">Contributed UI polish to this Plex/Jellyfin/Emby monitoring dashboard, including tightening up how playback state is surfaced across the interface.</p>
+                </div>
+              </div>
+              <div class="oss-item reveal-item" style="transition-delay:.16s">
+                <a class="oss-link-wrap" href="https://github.com/Doezer/Questarr" target="_blank" rel="noopener">
+                  <img class="oss-icon" src="https://github.com/Doezer.png?size=64" width="16" height="16" alt="" loading="lazy">
+                  <p class="oss-item-name">Questarr <span class="oss-stars">★ 645</span></p>
+                </a>
+                <div class="oss-item-body">
+                  <p class="oss-item-desc">One of the most active outside contributors — 12+ merged PRs spanning new features and fixes for this self-hosted game manager.</p>
+                </div>
+              </div>
+              <div class="oss-item reveal-item" style="transition-delay:.24s">
+                <a class="oss-link-wrap" href="https://github.com/runelite/plugin-hub" target="_blank" rel="noopener">
+                  <img class="oss-icon" src="https://github.com/runelite.png?size=64" width="16" height="16" alt="" loading="lazy">
+                  <p class="oss-item-name">RuneLite Plugin Hub <span class="oss-stars">★ 386</span></p>
+                </a>
+                <div class="oss-item-body">
+                  <p class="oss-item-desc">Added and maintain the <strong>groupscape</strong> plugin listing — 10+ merged updates keeping it current.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block reveal" id="stack">
+        <p class="kicker">04 — stack</p>
+        <h2>Tools I reach for</h2>
+        <div class="panel stack-panel term-window">
+          <div class="term-bar"><span></span><span></span><span></span><span class="term-title">stack.json</span></div>
+          <div class="term-body">
+            <div class="stack-group reveal-item">
+              <p class="stack-label">Languages & frameworks</p>
+              <div class="stack"><span>C#</span><span>TypeScript</span><span>JavaScript</span><span>React</span><span>AngularJS</span></div>
+            </div>
+            <div class="stack-group reveal-item" style="transition-delay:.08s">
+              <p class="stack-label">Data & infra</p>
+              <div class="stack"><span>SQL Server</span><span>Oracle / PL-SQL</span><span>Docker</span><span>Azure</span><span>Self-hosted Linux</span></div>
+            </div>
+            <div class="stack-group reveal-item" style="transition-delay:.16s">
+              <p class="stack-label">Practice</p>
+              <div class="stack"><span>AI-assisted development</span><span>Claude Code</span><span>Git</span><span>Kanban / Jira</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block reveal" id="resume">
+        <p class="kicker">05 — résumé</p>
+        <div class="panel resume-panel term-window">
+          <div class="term-bar"><span></span><span></span><span></span><span class="term-title">resume.pdf</span></div>
+          <div class="term-body">
+            <p>Full work history, roles and dates.</p>
+            <div class="resume-actions">
+              <a class="btn-primary" href="assets/liam-morgan-cv.pdf" download>Download PDF</a>
+              <a class="btn-ghost" href="https://liammorgandev.github.io/resume/" target="_blank" rel="noopener">Open in new tab</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block reveal" id="contact">
+        <div class="panel contact-panel term-window">
+          <div class="term-bar"><span></span><span></span><span></span><span class="term-title">contact.sh</span></div>
+          <div class="term-body">
+            <h2>Get in touch</h2>
+            <p>Got a project that needs building, or a role worth hearing about — get in touch.</p>
+            <div class="contact-links">
+              <a href="mailto:liammorgan128@gmail.com">liammorgan128@gmail.com</a>
+              <a href="https://github.com/LiamMorganDev" target="_blank" rel="noopener">github.com/LiamMorganDev</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer></footer>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
