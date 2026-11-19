@@ -178,6 +178,7 @@ section.block{padding-block:1.1rem; scroll-margin-top:3.4rem;}
 }
 .work-status.live{color:var(--green); border:1px solid var(--green);}
 .work-status.soon{color:var(--yellow); border:1px solid var(--yellow);}
+.work-status.offline{color:var(--muted); border:1px solid var(--muted);}
 .work-desc{color:var(--muted); line-height:1.65; font-size:.94rem; max-width:64ch; margin:0 0 .55rem;}
 .work-desc:last-of-type{margin-bottom:0;}
 .work-desc .lbl{font-size:.68rem; letter-spacing:.08em; margin-right:.5rem;}
